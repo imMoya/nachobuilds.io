@@ -1,0 +1,27 @@
+site_name: nachobuilds.io
+theme:
+  name: material
+  logo: images/logo.png
+  favicon: images/favicon.png
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - hide-navigation
+  palette:
+    - scheme: default
+      primary: white
+      accent: indigo
+
+nav:
+  - home: index.md
+  - whois: whois.md
+  - books: books.md
+
+plugins:
+  - search
+  - blog:
+      blog_dir: posts
+      archive: false
