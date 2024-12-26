@@ -1,8 +1,8 @@
 site_name: nachobuilds.com
 theme:
   name: material
-  logo: images/logo.png
-  favicon: images/favicon.png
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
   features:
     - announce.dismiss
     - content.action.edit
@@ -42,6 +42,10 @@ nav:
     - blog/index.md
   - books: books.md
 
+# Override the default favicon for Chrome
+extra:
+  extra_head:
+    - '<link rel="icon" href="assets/favicon.png" type="image/png">'
 
 plugins:
  - blog:
