@@ -4,34 +4,61 @@ theme:
   logo: images/logo.png
   favicon: images/favicon.png
   features:
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.sections
-    - navigation.expand
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.footnote.tooltips
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
     - navigation.indexes
-    - hide-navigation
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
   palette:
-    - scheme: default
-      primary: white
-      accent: indigo
+   scheme: default
+   primary: white
+   accent: indigo
 
 nav:
-  - home:
+  - blog:
     - blog/index.md
   - whois: whois.md
   - books: books.md
 
 
 plugins:
-  - blog:
-      blog_dir: blog
-      post_url_format: "{slug}"
-      post_excerpt: optional
-      post_readtime: true
-  - rss:
-      match_path: blog/posts/.* 
-      date_from_meta:
-        as_creation: date
-      categories:
-        - categories
-        - tags 
+ - blog:
+     enabled: true
+     blog_dir: blog
+     blog_toc: true
+     post_dir: "{blog}/posts"
+     post_url_format: "{slug}"
+     post_readtime: false
+     post_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+     post_slugify_separator: _
+     post_excerpt: optional
+     post_excerpt_separator: <!-- more -->
+     categories: true
+     categories_allowed:
+        - python
+        - personal
+
