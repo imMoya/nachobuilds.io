@@ -2,4 +2,4 @@
 hide:
   - toc
 ---
-# Home
+# blog

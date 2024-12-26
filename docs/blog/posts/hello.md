@@ -1,5 +1,4 @@
 ---
-draft: true 
 title: hello world
 date: 2024-01-31
 authors: [nachomoya]
@@ -294,4 +293,3 @@ sd faskdfjasdjfasdf as
   a
   sdf
   as
-  
