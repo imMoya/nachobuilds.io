@@ -37,9 +37,9 @@ theme:
    accent: indigo
 
 nav:
+  - whois: index.md
   - blog:
     - blog/index.md
-  - whois: whois.md
   - books: books.md
 
 
