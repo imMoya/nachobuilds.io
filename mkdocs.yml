@@ -1,4 +1,6 @@
 site_name: nachobuilds.com
+repo_name: imMoya/nachobuilds.com
+repo_url: https://github.com/imMoya/nachobuilds.com
 theme:
   name: material
   logo: assets/logo.png
@@ -10,16 +12,16 @@ theme:
     - content.code.annotate
     - content.code.copy
     # - content.code.select
-    # - content.footnote.tooltips
+    - content.footnote.tooltips
     # - content.tabs.link
     - content.tooltips
     # - header.autohide
     # - navigation.expand
     - navigation.footer
     - navigation.indexes
-    # - navigation.instant
-    # - navigation.instant.prefetch
-    # - navigation.instant.progress
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
     # - navigation.prune
     - navigation.sections
     - navigation.tabs
@@ -32,9 +34,24 @@ theme:
     - toc.follow
     # - toc.integrate
   palette:
-   scheme: default
-   primary: white
-   accent: indigo
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/lightbulb-auto
+        name: Switch to light mode
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: orange
+      accent: teal
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: orange
+      accent: teal
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to system preference
 
 nav:
   - whois: index.md
