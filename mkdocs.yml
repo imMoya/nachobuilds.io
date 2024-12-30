@@ -57,14 +57,15 @@ nav:
   - whois: index.md
   - blog:
     - blog/index.md
-  - books: books.md
+  - links: links.md
 
 # Override the default favicon for Chrome
 extra:
   extra_head:
     - '<link rel="icon" href="assets/favicon.png" type="image/png">'
 
-plugins:
+plugins:  
+ - search:
  - blog:
      enabled: true
      blog_dir: blog
