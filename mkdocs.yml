@@ -3,7 +3,7 @@ repo_name: imMoya/nachobuilds.com
 repo_url: https://github.com/imMoya/nachobuilds.com
 theme:
   name: material
-  logo: assets/nb_bc.png
+  logo: assets/nb_bc.PNG
   favicon: assets/nb_circle.ico
   features:
     - announce.dismiss
